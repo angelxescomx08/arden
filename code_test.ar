@@ -1,0 +1,7 @@
+char letter = 'A';
+string name = "John";
+
+bool isStudent = true;
+
+int age = 20;
+float height = 1.75;

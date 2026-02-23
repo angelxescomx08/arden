@@ -2,11 +2,23 @@
 
 My programming language project.
 
+## Compilation
+
+```bash
+g++ main.cpp -o main
+```
+
+## Execution
+
+```bash
+./main
+```
+
 ## Syntax
 
 ### Variables
 
-```ar
+```c
 char letter = 'A';
 string name = "John";
 
@@ -17,7 +29,7 @@ float height = 1.75;
 ```
 
 ### Constants
-```ar
+```c
 const int MAX_AGE = 100;
 const float PI = 3.141592653589793;
 const string NAME = "John";
