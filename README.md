@@ -80,16 +80,68 @@ int isEven = true if condition else false;
 ### Functions
 
 ```c
-void greet(string name) {
+void function greet(string name) {
   print("Hello, ${name}!");
 }
 
-int add(int a, int b) {
+int function add(int a, int b) {
   return a + b;
 }
 
-bool isEven(int number) {
+bool function isEven(int number) {
   return number % 2 == 0;
 }
 ```
 
+### Classes
+```c
+class Person {
+  string name;
+  int age;
+
+  void greet() {
+    print("Hello, ${name}!");
+  }
+}
+
+Person person = new Person("John", 20);
+person.greet();
+```
+
+### Inheritance
+```c
+class Person {
+  string name;
+  int age;
+}
+
+class Student extends Person {
+  string school;
+}
+```
+
+### Polymorphism
+
+```c
+class Animal {
+  void makeSound() {
+    print("Animal sound");
+  }
+}
+
+class Dog extends Animal {
+  void makeSound() {
+    print("Dog sound");
+  }
+}
+```
+
+### Imports and Exports
+
+```c
+from "math" import sqrt;
+
+export void function greet(string name) {
+  print("Hello, ${name}!");
+}
+```
