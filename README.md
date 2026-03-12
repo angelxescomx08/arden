@@ -5,7 +5,7 @@ My programming language project.
 ## Compilation
 
 ```bash
-g++ main.cpp -o main
+g++ main.cpp ./src/lexer/lexer.cpp -o main
 ```
 
 ## Execution

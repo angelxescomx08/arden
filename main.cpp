@@ -2,16 +2,16 @@
 #include <fstream>
 #include <sstream>
 
-using namespace std;
+#include "src/lexer/lexer.h"
 
-string readFile(string &path){
-  ifstream file(path);
+std::string readFile(std::string &path){
+  std::ifstream file(path);
 
   if(!file){
-    throw runtime_error("Failed to open file: " + path);
+    throw std::runtime_error("Failed to open file: " + path);
   }
 
-  stringstream buffer;
+  std::stringstream buffer;
 
   buffer << file.rdbuf();
 
@@ -20,9 +20,10 @@ string readFile(string &path){
 
 int main(){
 
-  string path = "code_test.ar";
-  string code = readFile(path);
-  cout << code << endl;
+  std::string path = "code_test.ar";
+  std::string code = readFile(path);
+  
+  lexer(code);
 
   return 0;
 }
