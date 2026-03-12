@@ -32,4 +32,27 @@ enum class TokenType {
 
   BREAK_TOKEN,
   CONTINUE_TOKEN,
+
+  ADD_TOKEN,
+  SUBTRACT_TOKEN,
+  MULTIPLY_TOKEN,
+  DIVIDE_TOKEN,
+  EQUAL_TOKEN,
+  NOT_EQUAL_TOKEN,
+  GREATER_THAN_TOKEN,
+  LESS_THAN_TOKEN,
+  GREATER_THAN_EQUAL_TOKEN,
+  LESS_THAN_EQUAL_TOKEN,
+  MODULO_TOKEN,
+};
+
+class Token {
+  public:
+    TokenType type;
+    std::string value;
+
+    Token(TokenType type, std::string value){
+      this->type = type;
+      this->value = value;
+    }
 };
