@@ -23,7 +23,10 @@ int main(){
   std::string path = "code_test.ar";
   std::string code = readFile(path);
   
-  lexer(code);
+  std::vector<Token> tokens = lexer(code);
+  for (Token token : tokens) {
+    std::cout << token.type << " " << token.value << std::endl;
+  }
 
   return 0;
 }
